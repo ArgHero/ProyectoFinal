@@ -15,11 +15,171 @@
 
 <section id="search">
 
-<div>
-<span>
-    <button type="button">Genre All</button>
+    <div>
+       <span>
+        <select name="GenreAll" id="">
+          <option value="">Genre All</option>
+          <option value="">Boys Love</option>
+          <option value="">Comedy</option>
+          <option value="">Drama</option>
+          <option value="">Horror</option>
+        </select>
+       </span>
+
+       <span>
+        <select name="SeasonAll" id="">
+          <option value="">Season All</option>
+          <option value="">Fall 1988</option>
+          <option value="">Fall 2004</option>
+          <option value="">Fall 2016</option>
+          <option value="">Fall 2024</option>
+        </select>
+       </span>
+    </div>
+
+    <div>
+        <span>
+         <select name="StudioAll" id="">
+           <option value="">Studio All</option>
+           <option value="">Arms</option>
+           <option value="">Bones</option>
+           <option value="">C-Station</option>
+           <option value="">C2C</option>
+         </select>
+        </span>
+ 
+        <span>
+         <select name="StatusAll" id="">
+           <option value="">Status All</option>
+           <option value="">Ongoing</option>
+           <option value="">Completed</option>
+           <option value="">Upcoming</option>
+           <option value="">Hiatus</option>
+         </select>
+        </span>
+     </div>
+
+     <div>
+        <span>
+         <select name="TypeAll" id="">
+           <option value="">Type All</option>
+           <option value="">TV Series</option>
+           <option value="">Movie</option>
+           <option value="">BD</option>
+           <option value="">Music</option>
+         </select>
+        </span>
+ 
+        <span>
+         <select name="OrderByDefault" id="">
+           <option value="">Order By Default</option>
+           <option value="">A-Z</option>
+           <option value="">Z-A</option>
+           <option value="">Latest Update</option>
+           <option value="">Latest Added</option>
+         </select>
+        </span>
+     </div>
+
+</section>
+
+
+
+
+ <!-- This is a trial, ignore
+<section id="search">
+
+    <div class="dropdown">        
+            <button type="button" onclick="toggleDropdown('dropdown1')">Genre All</button>
+        <span id="dropdown1" class="dropdown-content">
+            <p>Adventure</p><p>Boys Love</p><p>Comedy</p>
+            <p>Drama</p><p>Gag Humor</p><p>Harem</p>
+            <p>Horror</p><p>Josei</p><p>Kids</p><p>Ecchi</p>
+        </span>        
+        
+            <button type="button" onclick="toggleDropdown('dropdown2')">Season All</button>
+        <span id="dropdown2" class="dropdown-content">
+            <p>Fall 1984</p><p>Fall 1994</p><p>Fall 2004</p>
+            <p>Fall 2006</p><p>Fall 2011</p><p>Fall 2012</p>
+            <p>Fall 2016</p><p>Fall 2017</p><p>Fall 2020</p><p>Fall 2021</p>
+        </span>
+
+    </div>
+
+    <div class="dropdown">        
+        
+        <button type="button" onclick="toggleDropdown('dropdown3')">Studio All</button>
+    <span id="dropdown3" class="dropdown-content">
+        <p>8bit</p><p>AIC</p><p>Arms</p>
+        <p>Bones</p><p>C-Station</p><p>CloverWorks</p>
+        <p>Asread.</p><p>Bee Train</p><p>Brain's Base</p><p>C2C</p>
+    </span>        
+    
+        <button type="button" onclick="toggleDropdown('dropdown4')">Status All</button>
+    <span id="dropdown4" class="dropdown-content">
+        <p>Ongoing</p><p>Completed</p><p>Upcoming</p>
+        <p>Hiatus</p>
+    
+    </span>
+    </div>
+
+    <div class="dropdown">        
+        
+    <button type="button" onclick="toggleDropdown('dropdown5')">Type All</button>
+<span id="dropdown5" class="dropdown-content">
+    <p>TV Series</p><p>OVA</p><p>Movie</p>
+    <p>Live Action</p><p>Music</p>
+</span>        
+
+    <button type="button" onclick="toggleDropdown('dropdown6')">Order by Default</button>
+<span id="dropdown6" class="dropdown-content">
+    <p>A-Z</p><p>Z-A</p><p>Latest Update</p>
+    <p>Latest Added</p><p>Popular</p><p>Rating</p>
 </span>
 
+    </div>
+
+
+</section>
+
+<style>
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content p {
+        padding: 12px 16px;
+        cursor: pointer;
+    }
+    .dropdown-content p:hover {
+        background-color: #f1f1f1;
+    }
+</style>
+
+<script>
+    function toggleDropdown(id) {
+        var dropdown = document.getElementById(id);
+        if (dropdown.style.display === "none" || dropdown.style.display === "") {
+            dropdown.style.display = "block";
+        } else {
+            dropdown.style.display = "none";
+        }
+    }
+</script>
+-->
+
+
+
+
+<!--This is a trial, ignore
+<section id="search">
+<div>
+ <span>
+    <button type="button">Season All</button>
+ </span>
 <span>
     <button type="button">Season All</button>
 </span>
@@ -51,8 +211,10 @@
     <button type="button">Search</button>
 </span>
 </div>
-
 </section>
+-->
+
+
 
 
     </main>
