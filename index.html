@@ -6,6 +6,9 @@
     <title>Página del Equipo 1</title>
 </head>
 <body>
+<!-------------------Banda superior---------------------------->
+    <header>
+
 <!-------------------Banda superior--------------------------->
     <header style="background-color: black">
        <img src="./images/Menubar_N.png" style="width: 40px; height: 50px">
@@ -13,9 +16,90 @@
         <img src="https://9anime.co.ba/wp-content/uploads/2024/02/logo-12.png" style="width: 100px; height: 50px">
         <!-- se agrega el label de busqueda -->
         <input type="search" id="busqueda" style="background-color: rgba(128, 128, 128, 0.312); width: 350px; height: 50px; border-radius:40px; border: 1px; font-size: 17px; position: relative; left: 15px; top: -10px" placeholder="    Search...">
-        
     </header>
-<!-------------------Cuerpo de la página--------------------------->
+<!------------Cuerpo de la página, parte 3- Eduardo ----------------->
+   <aside>
+
+<section id="search">
+
+    <div>
+       <span>
+        <select name="GenreAll" id="">
+          <option value="">Genre All</option>
+          <option value="">Boys Love</option>
+          <option value="">Comedy</option>
+          <option value="">Drama</option>
+          <option value="">Horror</option>
+        </select>
+       </span>
+
+       <span>
+        <select name="SeasonAll" id="">
+          <option value="">Season All</option>
+          <option value="">Fall 1988</option>
+          <option value="">Fall 2004</option>
+          <option value="">Fall 2016</option>
+          <option value="">Fall 2024</option>
+        </select>
+       </span>
+    </div>
+
+    <div>
+        <span>
+         <select name="StudioAll" id="">
+           <option value="">Studio All</option>
+           <option value="">Arms</option>
+           <option value="">Bones</option>
+           <option value="">C-Station</option>
+           <option value="">C2C</option>
+         </select>
+        </span>
+ 
+        <span>
+         <select name="StatusAll" id="">
+           <option value="">Status All</option>
+           <option value="">Ongoing</option>
+           <option value="">Completed</option>
+           <option value="">Upcoming</option>
+           <option value="">Hiatus</option>
+         </select>
+        </span>
+     </div>
+
+     <div>
+        <span>
+         <select name="TypeAll" id="">
+           <option value="">Type All</option>
+           <option value="">TV Series</option>
+           <option value="">Movie</option>
+           <option value="">BD</option>
+           <option value="">Music</option>
+         </select>
+        </span>
+ 
+        <span>
+         <select name="OrderByDefault" id="">
+           <option value="">Order By Default</option>
+           <option value="">A-Z</option>
+           <option value="">Z-A</option>
+           <option value="">Latest Update</option>
+           <option value="">Latest Added</option>
+         </select>
+        </span>
+     </div>
+     <div>
+        <form action="buscar.php" method="get">
+<!--            <label for="busqueda">Type:</label>    -->
+            <input type="text" id="busqueda" name="query" placeholder="Type your search">
+            <button type="submit">Search</button>
+        </form>
+     </div>
+
+</section>
+
+</aside>
+
+
     <main>
         <!--section.carrusel>article.titulo*5>ul.campos>li*2-->
         <section class="carrusel">
