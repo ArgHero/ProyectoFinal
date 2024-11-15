@@ -28,7 +28,7 @@ git checkout -b  <su nombre>
 | 2 | Saul | Dentro del cuerpo principal de la página "body" se creó una sección destinada al contenido de la cartelera principal del sitio donde se usaron imágenes, botones, hipervínculos internos y externos . Todo esto siguiendo una jerarquía semántica de los contenedores main>section>article>span-div. Algunas etiquetas emplean modificadores como class o ID según es necesario. |
 | 3 | Eduardo | Dentro del cuerpo <body> se creo una section "section" en donde se añadieron unos  "select" que te permiten filtrar los tipos de contenido que el usuario desee ver. Se utilizaron los contenedores "div" y "span" para ordenarlos de manera horizontal y vertical respectivamente. |
 | 4 | Maritza | |
-| 5 | Dayana | |
+| 5 | Dayana | Dentro del cuerpo "main" de la pagina se diseño una seccion que se divide en aquellos 5 animes mas populares de manera semanal, mensual y anual. Usando "div" y "section"|
 | 6 | Beatriz?? | |
 | 7 | Evelyn | Dentro del cuerpo del "body" de la página se generó una sección de contenido reciente, en el cual se muestra un grupo de listas desordenadas que incluye un botón, cada opción se guarda en un "span" y cada uno de estos en un "section". |
 | 8 | Ricardo | |
