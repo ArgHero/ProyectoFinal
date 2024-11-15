@@ -4,7 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página del Equipo 1</title>
+    <style>
+        /*Estilos de la lista*/
+        .az-list {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        .az-list a {
+            display: inline-block;
+            padding: 0.5rem;
+            background-color: #9e4dd2; 
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        /*pie de pagina*/
+        footer {
+            text-align: center;
+            color: #aaa;
+            font-size: 0.9rem;
+            padding: 1.5rem 0;
+            background-color: #333; /* Fondo de color gris oscuro */
+
+        }
+        footer .buttons {
+            margin-top: 1rem;
+        }
+        footer .button {
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer .button:hover {
+            background-color: #666;
+        }
+    </style>
 </head>
+
 <body> 
 <!-------------------Banda superior--------------------------->
     <header style="background-color: black">
@@ -517,8 +560,49 @@
 
 <!-------------------Final de la página---------------------------->
     <footer>
+        <div class="az-list-header">A-Z LIST Searching order by alphabet name A to Z.</div>
+
+        <div class="az-list">
+            <a href="#">#</a>
+            <a href="#">0-9</a>
+            <a href="#">A</a>
+            <a href="#">B</a>
+            <a href="#">C</a>
+            <a href="#">D</a>
+            <a href="#">E</a>
+            <a href="#">F</a>
+            <a href="#">G</a>
+            <a href="#">H</a>
+            <a href="#">I</a>
+            <a href="#">J</a>
+            <a href="#">K</a>
+            <a href="#">L</a>
+            <a href="#">M</a>
+            <a href="#">N</a>
+            <a href="#">O</a>
+            <a href="#">P</a>
+            <a href="#">Q</a>
+            <a href="#">R</a>
+            <a href="#">S</a>
+            <a href="#">T</a>
+            <a href="#">U</a>
+            <a href="#">V</a>
+            <a href="#">W</a>
+            <a href="#">X</a>
+            <a href="#">Y</a>
+            <a href="#">Z</a>
+        </div>
         
+        <!--copyright-->
+        <p>Copyright © 2024 9anime. All Rights Reserved</p>
+        <p>Disclaimer: This site 9anime does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+
+        <!--Adicionales-->
+        <div class="buttons">
+            <button class="button">Az List</button>
+            <button class="button">Schedule</button>
+            <button class="button">anix official</button>
+        </div>
     </footer>
-<!--Probando Commit Gerling-->
 </body>
 </html>
