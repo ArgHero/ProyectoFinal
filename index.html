@@ -9,6 +9,13 @@
 <!-------------------Banda superior---------------------------->
     <header>
 
+<!-------------------Banda superior--------------------------->
+    <header style="background-color: black">
+       <img src="./images/Menubar_N.png" style="width: 40px; height: 50px">
+        <!--Se agrega logo principal de la pagina-->
+        <img src="https://9anime.co.ba/wp-content/uploads/2024/02/logo-12.png" style="width: 100px; height: 50px">
+        <!-- se agrega el label de busqueda -->
+        <input type="search" id="busqueda" style="background-color: rgba(128, 128, 128, 0.312); width: 350px; height: 50px; border-radius:40px; border: 1px; font-size: 17px; position: relative; left: 15px; top: -10px" placeholder="    Search...">
     </header>
 <!------------Cuerpo de la página, parte 3- Eduardo ----------------->
    <aside>
@@ -90,147 +97,126 @@
 
 </section>
 
-
-
-
- <!-- This is a trial, ignore
-<section id="search">
-
-    <div class="dropdown">        
-            <button type="button" onclick="toggleDropdown('dropdown1')">Genre All</button>
-        <span id="dropdown1" class="dropdown-content">
-            <p>Adventure</p><p>Boys Love</p><p>Comedy</p>
-            <p>Drama</p><p>Gag Humor</p><p>Harem</p>
-            <p>Horror</p><p>Josei</p><p>Kids</p><p>Ecchi</p>
-        </span>        
-        
-            <button type="button" onclick="toggleDropdown('dropdown2')">Season All</button>
-        <span id="dropdown2" class="dropdown-content">
-            <p>Fall 1984</p><p>Fall 1994</p><p>Fall 2004</p>
-            <p>Fall 2006</p><p>Fall 2011</p><p>Fall 2012</p>
-            <p>Fall 2016</p><p>Fall 2017</p><p>Fall 2020</p><p>Fall 2021</p>
-        </span>
-
-    </div>
-
-    <div class="dropdown">        
-        
-        <button type="button" onclick="toggleDropdown('dropdown3')">Studio All</button>
-    <span id="dropdown3" class="dropdown-content">
-        <p>8bit</p><p>AIC</p><p>Arms</p>
-        <p>Bones</p><p>C-Station</p><p>CloverWorks</p>
-        <p>Asread.</p><p>Bee Train</p><p>Brain's Base</p><p>C2C</p>
-    </span>        
-    
-        <button type="button" onclick="toggleDropdown('dropdown4')">Status All</button>
-    <span id="dropdown4" class="dropdown-content">
-        <p>Ongoing</p><p>Completed</p><p>Upcoming</p>
-        <p>Hiatus</p>
-    
-    </span>
-    </div>
-
-    <div class="dropdown">        
-        
-    <button type="button" onclick="toggleDropdown('dropdown5')">Type All</button>
-<span id="dropdown5" class="dropdown-content">
-    <p>TV Series</p><p>OVA</p><p>Movie</p>
-    <p>Live Action</p><p>Music</p>
-</span>        
-
-    <button type="button" onclick="toggleDropdown('dropdown6')">Order by Default</button>
-<span id="dropdown6" class="dropdown-content">
-    <p>A-Z</p><p>Z-A</p><p>Latest Update</p>
-    <p>Latest Added</p><p>Popular</p><p>Rating</p>
-</span>
-
-    </div>
-
-
-</section>
-
-<style>
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-    .dropdown-content p {
-        padding: 12px 16px;
-        cursor: pointer;
-    }
-    .dropdown-content p:hover {
-        background-color: #f1f1f1;
-    }
-</style>
-
-<script>
-    function toggleDropdown(id) {
-        var dropdown = document.getElementById(id);
-        if (dropdown.style.display === "none" || dropdown.style.display === "") {
-            dropdown.style.display = "block";
-        } else {
-            dropdown.style.display = "none";
-        }
-    }
-</script>
--->
-
-
-
-
-<!--This is a trial, ignore
-<section id="search">
-<div>
- <span>
-    <button type="button">Season All</button>
- </span>
-<span>
-    <button type="button">Season All</button>
-</span>
-</div>
-
-<div>
-<span>
-    <button type="button">Estudio All</button>
-</span>
-
-<span>
-    <button type="button">Status All</button>
-</span>
-</div>
-
-<div>
-<span>
-    <button type="button">Type All</button>
-</span>
-
-<span>
-    <button type="button">Order by Default</button>
-</span>
-
-</div>
-
-<div>
-<span>
-    <button type="button">Search</button>
-</span>
-</div>
-</section>
--->
-
 </aside>
 
 
     <main>
+        <!--section.carrusel>article.titulo*5>ul.campos>li*2-->
+        <section class="carrusel">
+            <article class="paginacion">
+                <span class="viñeta" role="button" aria-label="cambia_cartel1"><a href="#onepiece"><button type="button">o</button></a></span>
+                <span class="viñeta" role="button" aria-label="cambia_cartel2"><a href="#makeine"><button type="button">o</button></a></span>
+                <span class="viñeta" role="button" aria-label="cambia_cartel3"><a href="#frieren"><button type="button">o</button></a></span>
+                <span class="viñetaActiva" role="button" aria-label="cambia_cartel4"><a href="#jujutsu"><button type="button">x</button></a></span>
+                <span class="viñeta" role="button" aria-label="cambia_cartel5"><a href="#dandadan"><button type="button">o</button></a></span>
+            </article>
+            <article class="cambio_pagina">
+                <form action="">
+                    <button class="BotonPaginaAnterior" type ="button" aria-label="cartelSiguiente">&lt;</button>
+                    <button class="BotonPaginaSiguiente" type ="button" aria-label="cartelAnterior">&gt;</button>
+                </form>
+            </article>
+            <article class="cartelera" aria-label="arrastre">
+            <!-- aria llamara a una funcion en algun sitio para permitir deslizar los elementos de la cartelera (creo)-->
+                <span class="elementoCartelera" id="onepiece">
+                    <img width="500px" src="https://i1.wp.com/9anime.co.ba/wp-content/uploads/2024/02/one-piece-film-strongworld-blogroll-1635990067463.jpg" alt="One Piece">
+                    <div class="sinopsis">
+                        <a class="watch" href="https://9anime.co.ba/anime/one-piece-1999/"><button type="button">Mirar Ahora</button></a> 
+                        <h2><a href="https://www.youtube.com/watch?v=yu-0eh9jdZg">One Piece</a></h2>
+                        <p>Barely surviving in a barrel after passing through a terrible whirlpool at sea, carefree Monkey D. Luffy ends up aboard a ship under attack by fearsome pirates&#8230;</p>
+                    </div>
+                </span>
+
+                <span class="elementoCartelera" id="makeine">
+                    <img width="500px" src="https://www.escapistmagazine.com/wp-content/uploads/2024/07/Makeine-Too-Many-Losing-Heroines-anime-poster-keyart.jpg" alt="Mekeine">
+                    <div class="sinopsis">
+                        <a class="watch" href="https://9anime.co.ba/anime/makeine-too-many-losing-heroines-2024/"><button type="button">Mirar Ahora</button></a> 
+                           <h2><a href="https://www.youtube.com/watch?v=7GJOBkIgWHc">Makeine: Too Many Losing Heroines! (2024)</a></h2>
+                           <p>Kazuhiko Nukumizu, a self-proclaimed "background character", accidentally witnessed his popular classmate Anna Yanami being rejected by her childhood friend.</p>
+                    </div>
+                </span>
+
+                <span class="elementoCartelera" id="frieren">
+                    <img width="500px" src="https://th.bing.com/th/id/OIP.95CDoe2Ns2QrZ6rM6xuVZQHaEK?rs=1&pid=ImgDetMain" alt="Frieren">
+                    <div class="sinopsis">
+                        <a class="watch" href="https://9anime.co.ba/anime/sousou-no-frieren-2023/"><button type="button">Mirar Ahora</button></a> 
+                        <h2><a href="https://www.youtube.com/watch?v=iqsnJJK8GA4">Sousou no Frieren (2023)</a></h2>
+                        <p>As the years pass, Frieren gradually realizes how her days in the hero's party truly impacted her. Witnessing the deaths of two of her former companions, Frieren begins to regret&#8230;</p>
+                    </div>
+                </span>
+
+                <span class="elementoCartelera" id="jujutsu">
+                    <img width="500px" src="https://wallpapercave.com/wp/wp8921149.jpg" alt="Jujutsu Kaisen">
+                    <div class="sinopsis">
+                        <a class="watch" href="https://9anime.co.ba/anime/jujutsu-kaisen-2nd-season-2023/"><button type="button">Mirar Ahora</button></a> 
+                        <h2><a href="https://www.youtube.com/watch?v=gcgKUcJKxIs">Jujutsu Kaisen 2nd Season (2023)</a></h2>
+                        <p>Sorcerers are the frontline defense against the rising number of high-level curses born from humans' negative emotions. As the entities grow in power, their self-awareness and ambition increase too&#8230;</p>
+                    </div>
+                </span>
+
+                <span class="elementoCartelera" id="dandadan">
+                    <img width="500px" src="https://i.redd.it/dl5ptfnd0yf71.jpg" alt="Dandadan">
+                    <div class="sinopsis">
+                        <a class="watch" href="https://9anime.co.ba/anime/dandadan-2024/"><button type="button">Mirar Ahora</button></a> 
+                        <h2><a href="https://www.youtube.com/watch?v=a4na2opArGY">Dandadan (2024)</a></h2>
+                        <p>Takakura is a young occult-loving man who doesn't believe in ghosts, while his friend, Ayase, doesn't believe in aliens, but together they will stumble upon a mystery that will defy all their beliefs and conventions&#8230;</p>
+                        </div>
+                    </div>
+                </span>
+
+            </article>          
+        </section>
 
     </main>
+    <aside>
+        <!---PARTE 7 DE LA PÁGINA-->
+        <section id="Animes_recientes">
+            <span>
+                <ul><li>Natsume´s Book of Friends (2024)</li></ul>
+                <button>Ver episodios</button>
+            </span>
+            <span>
+                <ul><li>Seirei Genosuke: Spirit Chronicles (2024)</li></ul>
+                <button>Ver episodios</button>
+            </span>
+            <span>
+                <ul><li>Arifureta: From Commonplace to World's Strongest (2024)</li></ul>
+                <button>Ver episodios</button>
+            </span>
+            <span>
+                <ul><li>Nina the Starry Bride (2024)</li></ul>
+                <button>Ver episodios</button>
+            </span>
+            <span>
+                <ul><li>Ron Kamonohashi's Forbidden Deduction (2024)</li></ul>
+                <button>Ver episodios</button>
+            </span>
+            <span>
+                <ul><li>Let This Grieving Soul Retire (2024)</li></ul>
+                <button>Ver episodios</button>
+            </span>
+            <span>
+                <ul><li>As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World (2024)</li></ul>
+                <button>Ver episodios</button>
+            </span>
+            <span>
+                <ul><li>Tower of Good (2024)</li></ul>
+                <button>Ver episodios</button>
+            </span>
+            <span>
+                <ul><li>One Piece Log: Fsh-Man Island Saga (2024)</li></ul>
+                <button>Ver episodios</button>
+            </span>
+            <span>
+                <ul><li>Ranma 1/2 (2024)</li></ul>
+                <button>Ver episodios</button>
+            </span>
+        </section>
+    </aside>
 <!-------------------Final de la página---------------------------->
     <footer>
-
+        
     </footer>
-    
+<!--Probando Commit Gerling-->
 </body>
 </html>
